@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<head>
+<title>EDcart</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#" style="max-width: 15%;">
+        <img src="icon.jpg" class="img-fluid">
+     </a>
+         
+      <!--<a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>-->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Product
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white">Cake</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Sports & Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Cloth</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">School & stationary</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Bakes & Sweet</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Fancy items</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Mobile Accessories</a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!-- <h5 class="title">Based on Florin-pop's tutorial https://www.florin-pop.com/blog/2019/03/full-page-slider/</h5> -->
+<div class="slider">
+	<div class="slider-container">
+		<div class="slide active" style="background-image: url('sports.jpg');">
+			<div class="info">
+				<h1>Sports & Shoes</h1>
+				<p>Select your best choice</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('mobile.jpg');">
+			<div class="info">
+				<h1>Mobile & Accessories</h1>
+				<p>Buy good quality products</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('cloth.jpg');">
+			<div class="info">
+				<h1>Cloths</h1>
+				<p>Hey! Awesome cloths Avilable Here Don't wait </p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('fancy.jpg');">
+			<div class="info">
+				<h1>Fancy items</h1>
+				<p>Buy your best choice</p>
+			</div>
+		</div>
+	</div>
+	<div class="eraser"></div>
+	<div class="buttons-container">
+		<button id="previous"><i class="fas fa-chevron-left"></i></button>
+		<button id="next"><i class="fas fa-chevron-right"></i></button>
+	</div>
+</div>
+<!--products--**************************************************************-->
+<div class="ED"><h2></h2></div>
+<section class="featured-categories">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <img src="cake.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+              <img src="dress.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+              <img src="color.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+<!--on sale product-->
+<section class="on-sale">
+<div class="container">
+<div class="title-box">
+  <h2>on sale</h2>
+</div>
+<div class="row">
+  <div class="col-md-3">
+      <div class="product-top">
+        <a href="clothes.html">
+          <img src="dress.jpg" alt=""></a>
+          <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quickshop">
+                  <i class="fa fa-eye"></i>
+              </button>
+          </div>
+          <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <h3>Cloths</h3>
+              <h5></h5>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="product-top">
+        <a href="fancy.html">
+          <img src="color.jpg" alt="">
+        </a>
+          <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quickshop">
+                  <i class="fa fa-eye"></i>
+              </button>
+          </div>
+          <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <h3>Fancy<br>items</h3>
+              <h5></h5>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="product-top">
+        <a href="bakes.html">
+          <img src="cake.jpg" alt="">
+        </a>
+          <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quickshop">
+                  <i class="fa fa-eye"></i>
+              </button>
+          </div>
+          <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <h3>Bakes & <br>Sweet</h3>
+              <h5></h5>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="product-top">
+        <a href="sports.html">
+          <img src="download.jpg" alt="">
+          </a>
+          <div class="overlay-right">
+              <button type="button" class="btn btn-secondary" title="Quickshop">
+                  <i class="fa fa-eye"></i>
+              </button>
+          </div>
+          <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <h3>Sports&<br>shoes</h3>
+              <h5></h5>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<br>
+  <section class="on-sale">
+      <div class="container">
+          <div class="title-box">
+              <h2>on sale</h2>
+          </div>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="product-top">
+                    <a href="mobile.html">
+                      <img src="mobile1.jpg" alt="">
+                    </a>
+                      <div class="overlay-right">
+                          <button type="button" class="btn btn-secondary" title="Quickshop">
+                              <i class="fa fa-eye"></i>
+                          </button>
+                      </div>
+                      <div class="product-bottom text-center">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <h3>Mobile&<br>Accessories</h3>
+                          <h5></h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-top">
+                    
+                    <a href="shoool.html">
+                    <img src="stat.jpg" class="img-responsive img-fluid" alt="">
+                  </a>  
+                      <div class="overlay-right">
+                          <button type="button" class="btn btn-secondary" title="Quickshop">
+                              <i class="fa fa-eye"></i>
+                          </button>
+                      </div>
+                      <div class="product-bottom text-center">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-sta
+                          r"></i>
+                          <h3>School&<br>stationary</h3>
+                          <h5></h5>
+                      </div>
+                  </div>
+              </div>
+                           
+          </div>
+      </div>
+</section>
+<!--footer-->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Company</h1>
+    <ul>
+      <li>About</li>
+      <a href="feedback.html"><li>Feedback</li></a>
+      <li>App under<br> construction</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Service</h1>
+    <ul>
+      <li>No login<br>Required</li>
+      <li>100% Purchase<br>Protection</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Contact</h1>
+    <ul>
+      <li>+918136808172</li>
+      <li>+919946225214</li>
+      <li>edcjamia@gmail.com</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>24/7 customer<br>support</li>
+    </ul>
+  </div>
+  
+<div class="clearfix"></div>
+</div>
+</div>
+  
+      <script src="prodmainj.js"></script>
+     <script src="Edj.js"></script>
+</body>
+</html>
